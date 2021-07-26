@@ -1,0 +1,24 @@
+{
+  "name": "cypress-example",
+  "version": "1.0.0",
+  "description": "For install and run just perform:     1) `npm install cypress --save-dev`     2) `npx cypress open`     3) Choose the elctron browser and run the suite     4) Don't forget to use your own credintial in cypress/fixtures",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^8.0.0",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ancient07/cypress-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ancient07/cypress-example/issues"
+  },
+  "homepage": "https://github.com/ancient07/cypress-example#readme"
+}
