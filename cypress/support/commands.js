@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('login', (username, password) => {
+    cy.log('type login') 
+    cy.get('input[name="username"]').type(username)
+    cy.log('type password')
+    cy.get('input[name="password"]').type(password)
+    cy.log('check that login button acceptable to click and click')
+    cy.get('button[type="submit"]').click()
+    cy.get('div[data-testid="instances-table"]').should('exist')
+ })
