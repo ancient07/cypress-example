@@ -3,6 +3,7 @@ const login = new Login();
 
 describe('Cypress Tests', () => {
     beforeEach(() => {
+      cy.intercept('POST','**/open_session', { statusCode: 200, body:  { }, headers: { } })
       login
       .login()
       .ensureLogin("LinkEditor_Link_Add_Button")
